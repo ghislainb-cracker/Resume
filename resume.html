@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -284,12 +285,12 @@
     .achievements-list li {
       font-size: 13.5px;
       margin-bottom: 10px;
-      display: flex;
-      gap: 10px;
+      line-height: 1.5;
     }
 
     .achievements-list li strong {
       color: #1a4b6e;
+      white-space: nowrap;
     }
 
     hr {
@@ -303,10 +304,12 @@
       .resume {
         padding: 24px 20px;
       }
+
       .two-column {
         grid-template-columns: 1fr;
         gap: 16px;
       }
+
       .contact-bar {
         gap: 12px;
         flex-direction: column;
@@ -314,185 +317,232 @@
     }
   </style>
 </head>
+
 <body>
-<div class="resume">
-  <!-- HEADER with all contacts -->
-  <div class="header">
-    <div class="name">BYIMBO GHISLAIN</div>
-    <div class="contact-bar">
-      <span>📍 Kigali, Rwanda</span>
-      <span>📞 (+250) 786 470 055</span>
-      <span>📧 byimbog250@gmail.com</span>
-      <span>🌐 <a href="https://ghislain-byimbo.vercel.app" target="_blank">ghislain-byimbo.vercel.app</a></span>
-      <span>💼 <a href="#">linkedin.com/in/ghislain-byimbo</a></span>
-      <span>💻 <a href="#">github.com/ghislain-dev</a></span>
+  <div class="resume">
+    <!-- HEADER with all contacts -->
+    <div class="header">
+      <div class="name">BYIMBO GHISLAIN</div>
+      <div class="contact-bar">
+        <span>📍 Kigali, Rwanda</span>
+        <span>📞 (+250) 786 470 055</span>
+        <span>📧 byimbog250@gmail.com</span>
+        <span>🌐 <a href="https://ghislain-byimbo.vercel.app" target="_blank">ghislain-byimbo.vercel.app</a></span>
+        <span>💼 <a href="#">linkedin.com/in/ghislain-byimbo</a></span>
+        <span>💻 <a href="#">github.com/ghislain-dev</a></span>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <div class="summary">
+        High school Software Development student, aspiring technology entrepreneur, and AI enthusiast passionate about
+        building solutions that solve real-world problems. Founder of PangaTrip, an AI-powered travel planning platform,
+        with experience in software development, leadership, community mentorship, and product building. Experienced in
+        developing full-stack applications, leading student initiatives, and teaching programming to young learners.
+        Committed to leveraging technology and artificial intelligence to create meaningful impact across Africa,
+        particularly in healthcare, education, and innovation.
+      </div>
+    </div>
+
+    <!-- EDUCATION + ENTREPRENEURSHIP side by side -->
+    <div class="two-column">
+      <!-- Education -->
+      <div class="info-block">
+        <h3>🎓 Education</h3>
+        <div class="edu-meta">Mulindi Technical Secondary School</div>
+        <div style="font-size:13px;">Advanced Level (A-Level), Software Development | Kigali, Rwanda</div>
+        <div class="date-badge" style="margin:6px 0 8px 0;">Sept 2023 – Jul 2026</div>
+        <div class="course-list">
+          <span class="course">Web Development</span>
+          <span class="course">Data Structures & Algorithms</span>
+          <span class="course">Intro to Machine Learning</span>
+          <span class="course">Backend Development</span>
+          <span class="course">Project Requirement Analysis</span>
+          <span class="course">Relational DB (SQL)</span>
+          <span class="course">Blockchain Fundamentals</span>
+          <span class="course">Windows Server Admin</span>
+        </div>
+      </div>
+
+      <!-- Entrepreneurship -->
+      <div class="info-block">
+        <h3>🚀 Entrepreneurship & Innovation</h3>
+        <div><strong>Founder & Builder — PangaTrip</strong> <span class="date-badge" style="margin-left:8px;">2025 –
+            Present</span></div>
+        <div style="font-size:13px; margin-top:8px;">AI Travel Planning Platform — generates personalized travel
+          recommendations and itineraries for visitors exploring Rwanda. Led product development from concept to
+          deployment using modern full-stack technologies. Leveraged AI to simplify travel discovery and promote tourism
+          accessibility.</div>
+        <div style="margin-top:6px; font-size:12px;">🔗 <a href="#">pangatrip.site</a></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-title">Freelance Software Developer</span>
+          <span class="exp-date">Jan 2026 – June 2026</span>
+        </div>
+        <div class="exp-desc">Developed web solutions for businesses and professionals to strengthen online presence.
+          Gathered client requirements, designed user-friendly interfaces, and delivered responsive applications. Built
+          professional websites tailored to client needs while improving communication and project management skills.
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-title">Frontend Developer Intern</span>
+          <span class="exp-company">LandO’clock</span>
+          <span class="exp-date">Mar 2026 – Apr 2026</span>
+        </div>
+        <div class="exp-desc">Implemented user-friendly dashboards and dynamic UI components to improve navigation and
+          user engagement. Integrated RESTful APIs and contributed to authentication and registration systems.
+          Collaborated with developers to support traceability and tracking infrastructure for manufacturers and
+          recyclers across Africa.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-title">Intern Team Lead</span>
+          <span class="exp-company">TechRise</span>
+          <span class="exp-date">Mar 2025 – Apr 2025</span>
+        </div>
+        <div class="exp-desc">Led a team of 8 interns in developing a digital platform for government employee
+          management. Coordinated project planning and development activities across team members. Contributed to
+          recruitment and user management modules using React, PostgreSQL, and RESTful APIs. Helped transform
+          paper-based administrative processes into digital workflows.</div>
+      </div>
+    </div>
+
+    <!-- LEADERSHIP & COMMUNITY IMPACT -->
+    <div class="section">
+      <div class="section-title">Leadership & Community Impact</div>
+      <div class="lead-item">
+        <div class="lead-title">Founder & President — School Coding Club</div>
+        <div class="lead-desc">Established and led the school's first Coding Club to promote digital literacy and
+          innovation. Organized coding challenges, workshops, and peer mentorship sessions. Encouraged students to
+          pursue technology and collaborative problem-solving.</div>
+      </div>
+      <div class="lead-item">
+        <div class="lead-title">School Coordinator — iLEAD Program</div>
+        <div class="lead-desc">Facilitated leadership activities and student engagement initiatives. Organized
+          discussions and workshops focused on leadership, communication, and teamwork. Supported fellow students in
+          developing confidence and leadership skills.</div>
+      </div>
+      <div class="lead-item">
+        <div class="lead-title">Programming Mentor — Nyagatare Youth Center</div>
+        <div class="lead-desc">Volunteered as a programming mentor, introducing young learners to coding fundamentals.
+          Guided students through beginner-friendly projects and problem-solving exercises. Inspired interest in
+          technology and digital skills among local youth.</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-name">KooZi — Personal Savings Application</span>
+          <span class="project-stack">Next.js • Node.js • MongoDB</span>
+        </div>
+        <div class="exp-desc">Developed a digital savings platform focused on helping users manage financial goals and
+          savings habits. Implemented secure authentication and goal-tracking features. Improved understanding of
+          product design, user feedback, and financial technology solutions.</div>
+        <div class="project-link">🔗 koozi.vercel.app</div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-name">Furn Furniture — E-Commerce Platform</span>
+          <span class="project-stack">React • Node.js • MongoDB</span>
+        </div>
+        <div class="exp-desc">Built an online furniture marketplace with responsive product browsing experiences.
+          Designed customer-focused interfaces and optimized usability across devices.</div>
+        <div class="project-link">🔗 furn-store.vercel.app</div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-name">AfriTimes — Digital News Platform</span>
+          <span class="project-stack">React • Firebase</span>
+        </div>
+        <div class="exp-desc">Developed a digital platform for delivering news and informational content. Designed
+          responsive interfaces and improved content accessibility.</div>
+        <div class="project-link">🔗 afri-times.vercel.app</div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-name">Personal Portfolio Website</span>
+          <span class="project-stack">Next.js • Tailwind CSS</span>
+        </div>
+        <div class="exp-desc">Designed and developed a personal portfolio showcasing projects, skills, and professional
+          growth. Created a modern, responsive interface to strengthen personal branding.</div>
+        <div class="project-link">🔗 ghislain-byimbo.vercel.app</div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-cat">
+          <h4>Programming Languages</h4>
+          <div class="skill-tags"><span class="skill-tag">JavaScript</span><span
+              class="skill-tag">TypeScript</span><span class="skill-tag">Python</span><span
+              class="skill-tag">Dart</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>Frameworks & Technologies</h4>
+          <div class="skill-tags"><span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span
+              class="skill-tag">React Native</span><span class="skill-tag">Node.js</span><span
+              class="skill-tag">Express.js</span><span class="skill-tag">MongoDB</span><span
+              class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span
+              class="skill-tag">Firebase</span><span class="skill-tag">Tailwind CSS</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>Developer Tools</h4>
+          <div class="skill-tags"><span class="skill-tag">Git & GitHub</span><span class="skill-tag">Docker</span><span
+              class="skill-tag">Postman</span><span class="skill-tag">Figma</span><span class="skill-tag">Google
+              Cloud</span><span class="skill-tag">Trello</span><span class="skill-tag">Jira</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>Professional Skills</h4>
+          <div class="skill-tags"><span class="skill-tag">Leadership</span><span class="skill-tag">Project
+              Management</span><span class="skill-tag">Mentorship</span><span class="skill-tag">Team
+              Collaboration</span><span class="skill-tag">Public Speaking</span><span class="skill-tag">Problem
+              Solving</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+      <div class="section-title">Achievements</div>
+      <ul class="achievements-list">
+        <li><strong>🏆Code for Impact Challenge—Semi-Finalist</strong>: Advanced to the semi-finals of a regional
+          technology competition focused on solving social challenges through innovation. Developed a prototype health
+          and wellness solution promoting preventive healthcare.</li>
+        <li><strong>⭐Top Academic Performer</strong>: Consistently ranked among the top-performing students in class.
+          Recognized for excellence in technology, science-related subjects, leadership, and problem-solving.</li>
+        <li><strong>💻Scratch Programming Competitor</strong>: Participated in Scratch programming competitions at both
+          school and district levels. Developed early programming and computational thinking skills through
+          project-based challenges.</li>
+      </ul>
+    </div>
+
+    <!-- subtle footer (ensures no missing data) -->
+    <hr>
+    <div style="font-size: 11px; text-align: center; color: #7f9ab3; margin-top: 10px;">
+      Byimbo Ghislain — Full resume includes all experiences, leadership roles, projects, and technical skills.
     </div>
   </div>
-
-  <!-- PROFESSIONAL SUMMARY -->
-  <div class="section">
-    <div class="section-title">Professional Summary</div>
-    <div class="summary">
-      High school Software Development student, aspiring technology entrepreneur, and AI enthusiast passionate about building solutions that solve real-world problems. Founder of PangaTrip, an AI-powered travel planning platform, with experience in software development, leadership, community mentorship, and product building. Experienced in developing full-stack applications, leading student initiatives, and teaching programming to young learners. Committed to leveraging technology and artificial intelligence to create meaningful impact across Africa, particularly in healthcare, education, and innovation.
-    </div>
-  </div>
-
-  <!-- EDUCATION + ENTREPRENEURSHIP side by side -->
-  <div class="two-column">
-    <!-- Education -->
-    <div class="info-block">
-      <h3>🎓 Education</h3>
-      <div class="edu-meta">Mulindi Technical Secondary School</div>
-      <div style="font-size:13px;">Advanced Level (A-Level), Software Development | Kigali, Rwanda</div>
-      <div class="date-badge" style="margin:6px 0 8px 0;">Sept 2023 – Jul 2026</div>
-      <div class="course-list">
-        <span class="course">Web Development</span>
-        <span class="course">Data Structures & Algorithms</span>
-        <span class="course">Intro to Machine Learning</span>
-        <span class="course">Backend Development</span>
-        <span class="course">Project Requirement Analysis</span>
-        <span class="course">Relational DB (SQL)</span>
-        <span class="course">Blockchain Fundamentals</span>
-        <span class="course">Windows Server Admin</span>
-      </div>
-    </div>
-
-    <!-- Entrepreneurship -->
-    <div class="info-block">
-      <h3>🚀 Entrepreneurship & Innovation</h3>
-      <div><strong>Founder & Builder — PangaTrip</strong> <span class="date-badge" style="margin-left:8px;">2025 – Present</span></div>
-      <div style="font-size:13px; margin-top:8px;">AI Travel Planning Platform — generates personalized travel recommendations and itineraries for visitors exploring Rwanda. Led product development from concept to deployment using modern full-stack technologies. Leveraged AI to simplify travel discovery and promote tourism accessibility.</div>
-      <div style="margin-top:6px; font-size:12px;">🔗 <a href="#">pangatrip.site</a></div>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <div class="section">
-    <div class="section-title">Experience</div>
-    
-    <div class="exp-item">
-      <div class="exp-header">
-        <span class="exp-title">Freelance Software Developer</span>
-        <span class="exp-date">Jan 2026 – June 2026</span>
-      </div>
-      <div class="exp-desc">Developed web solutions for businesses and professionals to strengthen online presence. Gathered client requirements, designed user-friendly interfaces, and delivered responsive applications. Built professional websites tailored to client needs while improving communication and project management skills.</div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-header">
-        <span class="exp-title">Frontend Developer Intern</span>
-        <span class="exp-company">LandO’clock</span>
-        <span class="exp-date">Mar 2026 – Apr 2026</span>
-      </div>
-      <div class="exp-desc">Implemented user-friendly dashboards and dynamic UI components to improve navigation and user engagement. Integrated RESTful APIs and contributed to authentication and registration systems. Collaborated with developers to support traceability and tracking infrastructure for manufacturers and recyclers across Africa.</div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-header">
-        <span class="exp-title">Intern Team Lead</span>
-        <span class="exp-company">TechRise</span>
-        <span class="exp-date">Mar 2025 – Apr 2025</span>
-      </div>
-      <div class="exp-desc">Led a team of 8 interns in developing a digital platform for government employee management. Coordinated project planning and development activities across team members. Contributed to recruitment and user management modules using React, PostgreSQL, and RESTful APIs. Helped transform paper-based administrative processes into digital workflows.</div>
-    </div>
-  </div>
-
-  <!-- LEADERSHIP & COMMUNITY IMPACT -->
-  <div class="section">
-    <div class="section-title">Leadership & Community Impact</div>
-    <div class="lead-item">
-      <div class="lead-title">Founder & President — School Coding Club</div>
-      <div class="lead-desc">Established and led the school's first Coding Club to promote digital literacy and innovation. Organized coding challenges, workshops, and peer mentorship sessions. Encouraged students to pursue technology and collaborative problem-solving.</div>
-    </div>
-    <div class="lead-item">
-      <div class="lead-title">School Coordinator — iLEAD Program</div>
-      <div class="lead-desc">Facilitated leadership activities and student engagement initiatives. Organized discussions and workshops focused on leadership, communication, and teamwork. Supported fellow students in developing confidence and leadership skills.</div>
-    </div>
-    <div class="lead-item">
-      <div class="lead-title">Programming Mentor — Nyagatare Youth Center</div>
-      <div class="lead-desc">Volunteered as a programming mentor, introducing young learners to coding fundamentals. Guided students through beginner-friendly projects and problem-solving exercises. Inspired interest in technology and digital skills among local youth.</div>
-    </div>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="section">
-    <div class="section-title">Projects</div>
-    
-    <div class="project-item">
-      <div class="project-header">
-        <span class="project-name">KooZi — Personal Savings Application</span>
-        <span class="project-stack">Next.js • Node.js • MongoDB</span>
-      </div>
-      <div class="exp-desc">Developed a digital savings platform focused on helping users manage financial goals and savings habits. Implemented secure authentication and goal-tracking features. Improved understanding of product design, user feedback, and financial technology solutions.</div>
-      <div class="project-link">🔗 koozi.vercel.app</div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-header">
-        <span class="project-name">Furn Furniture — E-Commerce Platform</span>
-        <span class="project-stack">React • Node.js • MongoDB</span>
-      </div>
-      <div class="exp-desc">Built an online furniture marketplace with responsive product browsing experiences. Designed customer-focused interfaces and optimized usability across devices.</div>
-      <div class="project-link">🔗 furn-store.vercel.app</div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-header">
-        <span class="project-name">AfriTimes — Digital News Platform</span>
-        <span class="project-stack">React • Firebase</span>
-      </div>
-      <div class="exp-desc">Developed a digital platform for delivering news and informational content. Designed responsive interfaces and improved content accessibility.</div>
-      <div class="project-link">🔗 afri-times.vercel.app</div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-header">
-        <span class="project-name">Personal Portfolio Website</span>
-        <span class="project-stack">Next.js • Tailwind CSS</span>
-      </div>
-      <div class="exp-desc">Designed and developed a personal portfolio showcasing projects, skills, and professional growth. Created a modern, responsive interface to strengthen personal branding.</div>
-      <div class="project-link">🔗 ghislain-byimbo.vercel.app</div>
-    </div>
-  </div>
-
-  <!-- TECHNICAL SKILLS -->
-  <div class="section">
-    <div class="section-title">Technical Skills</div>
-    <div class="skills-grid">
-      <div class="skill-cat">
-        <h4>Programming Languages</h4>
-        <div class="skill-tags"><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Python</span><span class="skill-tag">Dart</span></div>
-      </div>
-      <div class="skill-cat">
-        <h4>Frameworks & Technologies</h4>
-        <div class="skill-tags"><span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span class="skill-tag">React Native</span><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">MongoDB</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span class="skill-tag">Firebase</span><span class="skill-tag">Tailwind CSS</span></div>
-      </div>
-      <div class="skill-cat">
-        <h4>Developer Tools</h4>
-        <div class="skill-tags"><span class="skill-tag">Git & GitHub</span><span class="skill-tag">Docker</span><span class="skill-tag">Postman</span><span class="skill-tag">Figma</span><span class="skill-tag">Google Cloud</span><span class="skill-tag">Trello</span><span class="skill-tag">Jira</span></div>
-      </div>
-      <div class="skill-cat">
-        <h4>Professional Skills</h4>
-        <div class="skill-tags"><span class="skill-tag">Leadership</span><span class="skill-tag">Project Management</span><span class="skill-tag">Mentorship</span><span class="skill-tag">Team Collaboration</span><span class="skill-tag">Public Speaking</span><span class="skill-tag">Problem Solving</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ACHIEVEMENTS -->
-  <div class="section">
-    <div class="section-title">Achievements</div>
-    <ul class="achievements-list">
-      <li><strong>🏆 Code for Impact Challenge — Semi-Finalist</strong> — Advanced to the semi-finals of a regional technology competition focused on solving social challenges through innovation. Developed a prototype health and wellness solution promoting preventive healthcare.</li>
-      <li><strong>⭐ Top Academic Performer</strong> — Consistently ranked among the top-performing students in class. Recognized for excellence in technology, science-related subjects, leadership, and problem-solving.</li>
-      <li><strong>💻 Scratch Programming Competitor</strong> — Participated in Scratch programming competitions at both school and district levels. Developed early programming and computational thinking skills through project-based challenges.</li>
-    </ul>
-  </div>
-
-  <!-- subtle footer (ensures no missing data) -->
-  <hr>
-  <div style="font-size: 11px; text-align: center; color: #7f9ab3; margin-top: 10px;">
-    Byimbo Ghislain — Full resume includes all experiences, leadership roles, projects, and technical skills.
-  </div>
-</div>
 </body>
+
 </html>
